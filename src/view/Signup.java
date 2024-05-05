@@ -12,7 +12,7 @@ public class Signup extends javax.swing.JFrame {
     }
 
     @SuppressWarnings("unchecked")
-                 
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         jSeparator5 = new javax.swing.JSeparator();
@@ -220,10 +220,6 @@ public class Signup extends javax.swing.JFrame {
             if (password == null || password.isEmpty()) {
                 JOptionPane.showMessageDialog(this, "Password is empty.");
             }
-
-            if (!password.equals(confirmedPassword)) {
-                JOptionPane.showMessageDialog(this, "Confirmed Password is empty.");
-            }
             if (password.equals(confirmedPassword)) {
                 SpendSmartController controller = new SpendSmartController();
                 if (controller.signUpUser(firstname, lastname, username, password)) {
@@ -236,8 +232,15 @@ public class Signup extends javax.swing.JFrame {
             }
     }                                           
 
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String args[]) {
-
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -254,14 +257,20 @@ public class Signup extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Signup.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
+        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Signup().setVisible(true);
             }
         });
     }
-                 
+
+    // Variables declaration - do not modify                     
     private javax.swing.JPasswordField confirmedPasswordText;
     private javax.swing.JTextField emailText;
     private javax.swing.JTextField firstNameText;
@@ -283,5 +292,5 @@ public class Signup extends javax.swing.JFrame {
     private javax.swing.JPasswordField passwordText;
     private javax.swing.JButton registerBtn;
     private javax.swing.JTextField usernameText;
-             
+    // End of variables declaration                   
 }
