@@ -1,27 +1,3 @@
-/*
- * Copyright (c) 1997, 2021, Oracle and/or its affiliates. All rights reserved.
- * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- */
 
 package javax.swing;
 
@@ -58,71 +34,13 @@ import javax.swing.text.Position;
 import javax.swing.text.StyledDocument;
 import javax.swing.text.View;
 
-/**
- * A display area for a short text string or an image,
- * or both.
- * A label does not react to input events.
- * As a result, it cannot get the keyboard focus.
- * A label can, however, display a keyboard alternative
- * as a convenience for a nearby component
- * that has a keyboard alternative but can't display it.
- * <p>
- * A <code>JLabel</code> object can display
- * either text, an image, or both.
- * You can specify where in the label's display area
- * the label's contents are aligned
- * by setting the vertical and horizontal alignment.
- * By default, labels are vertically centered
- * in their display area.
- * Text-only labels are leading edge aligned, by default;
- * image-only labels are horizontally centered, by default.
- * <p>
- * You can also specify the position of the text
- * relative to the image.
- * By default, text is on the trailing edge of the image,
- * with the text and image vertically aligned.
- * <p>
- * A label's leading and trailing edge are determined from the value of its
- * {@link java.awt.ComponentOrientation} property.  At present, the default
- * ComponentOrientation setting maps the leading edge to left and the trailing
- * edge to right.
- *
- * <p>
- * Finally, you can use the <code>setIconTextGap</code> method
- * to specify how many pixels
- * should appear between the text and the image.
- * The default is 4 pixels.
- * <p>
- * See <a href="https://docs.oracle.com/javase/tutorial/uiswing/components/label.html">How to Use Labels</a>
- * in <em>The Java Tutorial</em>
- * for further documentation.
- * <p>
- * <strong>Warning:</strong> Swing is not thread safe. For more
- * information see <a
- * href="package-summary.html#threading">Swing's Threading
- * Policy</a>.
- * <p>
- * <strong>Warning:</strong>
- * Serialized objects of this class will not be compatible with
- * future Swing releases. The current serialization support is
- * appropriate for short term storage or RMI between applications running
- * the same version of Swing.  As of 1.4, support for long term storage
- * of all JavaBeans
- * has been added to the <code>java.beans</code> package.
- * Please see {@link java.beans.XMLEncoder}.
- *
- * @author Hans Muller
- * @since 1.2
- */
+ 
+
 @JavaBean(defaultProperty = "UI", description = "A component that displays a short string and an icon.")
 @SwingContainer(false)
 @SuppressWarnings("serial")
 public class JLabel extends JComponent implements SwingConstants, Accessible
 {
-    /**
-     * @see #getUIClassID
-     * @see #readObject
-     */
     private static final String uiClassID = "LabelUI";
 
     private int mnemonic = '\0';
@@ -145,16 +63,6 @@ public class JLabel extends JComponent implements SwingConstants, Accessible
      */
     protected Component labelFor = null;
 
-    /**
-     * Client property key used to determine what label is labeling the
-     * component.  This is generally not used by labels, but is instead
-     * used by components such as text areas that are being labeled by
-     * labels.  When the labelFor property of a label is set, it will
-     * automatically set the LABELED_BY_PROPERTY of the component being
-     * labelled.
-     *
-     * @see #setLabelFor
-     */
     static final String LABELED_BY_PROPERTY = "labeledBy";
 
     /**
