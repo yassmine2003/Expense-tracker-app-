@@ -12,7 +12,7 @@ public class Signup extends javax.swing.JFrame {
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+                 
     private void initComponents() {
 
         jSeparator5 = new javax.swing.JSeparator();
@@ -174,29 +174,29 @@ public class Signup extends javax.swing.JFrame {
         jPanel1.setBounds(0, -160, 1000, 710);
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>                        
 
-    private void emailTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailTextActionPerformed
+    private void emailTextActionPerformed(java.awt.event.ActionEvent evt) {                                          
         // TODO add your handling code here:
-    }//GEN-LAST:event_emailTextActionPerformed
+    }                                         
 
-    private void passwordTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordTextActionPerformed
+    private void passwordTextActionPerformed(java.awt.event.ActionEvent evt) {                                             
         // TODO add your handling code here:
-    }//GEN-LAST:event_passwordTextActionPerformed
+    }                                            
 
-    private void usernameTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameTextActionPerformed
+    private void usernameTextActionPerformed(java.awt.event.ActionEvent evt) {                                             
         // TODO add your handling code here:
-    }//GEN-LAST:event_usernameTextActionPerformed
+    }                                            
 
-    private void lastNameTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lastNameTextActionPerformed
+    private void lastNameTextActionPerformed(java.awt.event.ActionEvent evt) {                                             
         // TODO add your handling code here:
-    }//GEN-LAST:event_lastNameTextActionPerformed
+    }                                            
 
-    private void firstNameTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstNameTextActionPerformed
+    private void firstNameTextActionPerformed(java.awt.event.ActionEvent evt) {                                              
         // TODO add your handling code here:
-    }//GEN-LAST:event_firstNameTextActionPerformed
+    }                                             
 
-    private void registerBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerBtnActionPerformed
+    private void registerBtnActionPerformed(java.awt.event.ActionEvent evt) {                                            
         // TODO add your handling code here:
         String firstname = firstNameText.getText();
         String lastname = lastNameText.getText();
@@ -234,17 +234,10 @@ public class Signup extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "password don't match.");
                 }
             }
-    }//GEN-LAST:event_registerBtnActionPerformed
+    }                                           
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -261,20 +254,14 @@ public class Signup extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Signup.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
 
-        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Signup().setVisible(true);
             }
         });
     }
-
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+                 
     private javax.swing.JPasswordField confirmedPasswordText;
     private javax.swing.JTextField emailText;
     private javax.swing.JTextField firstNameText;
@@ -296,5 +283,5 @@ public class Signup extends javax.swing.JFrame {
     private javax.swing.JPasswordField passwordText;
     private javax.swing.JButton registerBtn;
     private javax.swing.JTextField usernameText;
-    // End of variables declaration//GEN-END:variables
+             
 }
