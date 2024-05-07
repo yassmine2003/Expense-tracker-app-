@@ -222,14 +222,14 @@ public class Signup extends javax.swing.JFrame {
             }
             if (password.equals(confirmedPassword)) {
                 SpendSmartController controller = new SpendSmartController();
-                if (controller.signUpUser(firstname, lastname, username, password)) {
+                if (controller.signUpUser(firstname,lastname,username,email,password));
                     dispose();
                     SpendSmartApp hpage = new SpendSmartApp(username);
                     hpage.show();
                 }else {
                 JOptionPane.showMessageDialog(this, "password don't match.");
                 }
-            }
+
     }                                           
 
     /**
