@@ -11,10 +11,7 @@ import java.util.Date;
 import javax.swing.JOptionPane;
 import view.SpendSmartApp;
 
-/**
- *
- * @author HP
- */
+
 public class DataBase {
     
     public static Connection mycon(){
@@ -22,7 +19,7 @@ public class DataBase {
         try{
             //Class.forName("com.mysql.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/spendsmart?useSSL=true&requireSSL=true&allowPublicKeyRetrieval=true";
-            connection = (Connection) DriverManager.getConnection(url,"root","salma"); //change password for your own MySql 
+            connection = (Connection) DriverManager.getConnection(url,"root","salma"); //change password for your own MySql server, mine's password is salma. 
         }catch(Exception e ){
             System.out.print(e);
         }
