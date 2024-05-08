@@ -834,9 +834,9 @@ public class SpendSmartApp extends javax.swing.JFrame {
     }                                    
 
     private void deleteBtnActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        // TODO add your handling code here:
+
         int selectedRow = jTable1.getSelectedRow();
-        if (selectedRow != -1) { // Check if a row is selected
+        if (selectedRow != -1) { 
             DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
             model.removeRow(selectedRow);
             SpendSmartController controller = new SpendSmartController();
@@ -848,28 +848,13 @@ public class SpendSmartApp extends javax.swing.JFrame {
         }
     }                                         
 
-    private void emailTextActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        // TODO add your handling code here:
-    }                                         
-
-    private void confirmPasswordTextActionPerformed(java.awt.event.ActionEvent evt) {                                                    
-        // TODO add your handling code here:
-    }                                                   
-
-    private void usernameTextActionPerformed(java.awt.event.ActionEvent evt) {                                             
-        // TODO add your handling code here:
-    }                                            
-
-    private void lastNameTextActionPerformed(java.awt.event.ActionEvent evt) {                                             
-        // TODO add your handling code here:
-    }                                            
-
-    private void firstNameTextActionPerformed(java.awt.event.ActionEvent evt) {                                              
-        // TODO add your handling code here:
-    }                                             
-
+    private void emailTextActionPerformed(java.awt.event.ActionEvent evt) {}                                         
+    private void confirmPasswordTextActionPerformed(java.awt.event.ActionEvent evt) {}                                                   
+    private void usernameTextActionPerformed(java.awt.event.ActionEvent evt) {}                                            
+    private void lastNameTextActionPerformed(java.awt.event.ActionEvent evt) {}                                            
+    private void firstNameTextActionPerformed(java.awt.event.ActionEvent evt) {}                                             
     private void updateBtnActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        // TODO add your handling code here:
+
         String firstname = firstNameText.getText();
         String lastname = lastNameText.getText();
         String username = usernameText.getText();
@@ -1061,10 +1046,7 @@ public class SpendSmartApp extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(SpendSmartApp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        // </editor-fold>
-        // </editor-fold>
 
-        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new SpendSmartApp().setVisible(true);
