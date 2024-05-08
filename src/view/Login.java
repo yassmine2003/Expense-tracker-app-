@@ -18,7 +18,6 @@ public class Login extends javax.swing.JFrame {
     }
     
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
@@ -142,9 +141,9 @@ public class Login extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>                        
+    }
 
-    private void loginBtnActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void loginBtnActionPerformed(java.awt.event.ActionEvent evt) {
         String username = usernameText.getText();
         String password = new String(passwordText.getPassword());
         SpendSmartController controller = new SpendSmartController();
@@ -157,29 +156,20 @@ public class Login extends javax.swing.JFrame {
             usernameText.setText("");
             passwordText.setText("");
         }
-    }                                        
+    }
 
-    private void signupBtnMouseClicked(java.awt.event.MouseEvent evt) {                                       
+    private void signupBtnMouseClicked(java.awt.event.MouseEvent evt) {
         Signup sign = new Signup();
         dispose();
         sign.show();
-    }                                      
+    }
 
-    private void forgotPasswordBtnMouseClicked(java.awt.event.MouseEvent evt) {                                               
+    private void forgotPasswordBtnMouseClicked(java.awt.event.MouseEvent evt) {
         Forgotpassword ps= new Forgotpassword();
         dispose();
         ps.show();
-    }                                              
-
-    /**
-     * @param args the command line arguments
-     */
+    }
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -196,9 +186,7 @@ public class Login extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-
-        /* Create and display the form */
+    
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Login().setVisible(true);
@@ -206,7 +194,6 @@ public class Login extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify                     
     private javax.swing.JLabel forgotPasswordBtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -217,5 +204,4 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JPasswordField passwordText;
     private javax.swing.JLabel signupBtn;
     private javax.swing.JTextField usernameText;
-    // End of variables declaration                   
 }
